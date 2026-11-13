@@ -1,0 +1,20 @@
+[
+  {
+    "id": "meganoticias",
+    "name": "Meganoticias",
+    "color": "#1ea88b",
+    "domain": "www.meganoticias.cl"
+  },
+  {
+    "id": "mega",
+    "name": "Mega",
+    "color": "#323cb4",
+    "domain": "www.mega.cl"
+  },
+  {
+    "id": "megatiempo",
+    "name": "Megatiempo",
+    "color": "#ffb831",
+    "domain": "www.megatiempo.cl"
+  }
+]

@@ -1,0 +1,653 @@
+[
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-01",
+    "editorial": 68,
+    "sponsored": 3,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-02",
+    "editorial": 64,
+    "sponsored": 2,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-03",
+    "editorial": 55,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-04",
+    "editorial": 55,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-05",
+    "editorial": 77,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-06",
+    "editorial": 70,
+    "sponsored": 2,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-07",
+    "editorial": 73,
+    "sponsored": 0,
+    "unpublished": 2
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-08",
+    "editorial": 80,
+    "sponsored": 2,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-09",
+    "editorial": 82,
+    "sponsored": 3,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-10",
+    "editorial": 52,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-11",
+    "editorial": 57,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-12",
+    "editorial": 60,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-13",
+    "editorial": 78,
+    "sponsored": 1,
+    "unpublished": 2
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-14",
+    "editorial": 57,
+    "sponsored": 3,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-15",
+    "editorial": 64,
+    "sponsored": 2,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-16",
+    "editorial": 66,
+    "sponsored": 2,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-17",
+    "editorial": 57,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-18",
+    "editorial": 57,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-19",
+    "editorial": 72,
+    "sponsored": 1,
+    "unpublished": 2
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-20",
+    "editorial": 86,
+    "sponsored": 1,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-21",
+    "editorial": 72,
+    "sponsored": 1,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-22",
+    "editorial": 67,
+    "sponsored": 1,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-23",
+    "editorial": 55,
+    "sponsored": 3,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-24",
+    "editorial": 61,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-25",
+    "editorial": 55,
+    "sponsored": 0,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-26",
+    "editorial": 76,
+    "sponsored": 2,
+    "unpublished": 4
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-27",
+    "editorial": 75,
+    "sponsored": 3,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-28",
+    "editorial": 65,
+    "sponsored": 1,
+    "unpublished": 4
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-29",
+    "editorial": 59,
+    "sponsored": 0,
+    "unpublished": 1
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-30",
+    "editorial": 69,
+    "sponsored": 1,
+    "unpublished": 2
+  },
+  {
+    "portal": "meganoticias",
+    "date": "2026-10-31",
+    "editorial": 62,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-01",
+    "editorial": 43,
+    "sponsored": 2,
+    "unpublished": 1
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-02",
+    "editorial": 41,
+    "sponsored": 2,
+    "unpublished": 2
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-03",
+    "editorial": 28,
+    "sponsored": 0,
+    "unpublished": 2
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-04",
+    "editorial": 23,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-05",
+    "editorial": 35,
+    "sponsored": 1,
+    "unpublished": 2
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-06",
+    "editorial": 33,
+    "sponsored": 1,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-07",
+    "editorial": 37,
+    "sponsored": 1,
+    "unpublished": 1
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-08",
+    "editorial": 29,
+    "sponsored": 2,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-09",
+    "editorial": 40,
+    "sponsored": 0,
+    "unpublished": 2
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-10",
+    "editorial": 25,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-11",
+    "editorial": 21,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-12",
+    "editorial": 37,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-13",
+    "editorial": 22,
+    "sponsored": 1,
+    "unpublished": 1
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-14",
+    "editorial": 40,
+    "sponsored": 1,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-15",
+    "editorial": 40,
+    "sponsored": 2,
+    "unpublished": 1
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-16",
+    "editorial": 36,
+    "sponsored": 2,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-17",
+    "editorial": 26,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-18",
+    "editorial": 18,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-19",
+    "editorial": 33,
+    "sponsored": 0,
+    "unpublished": 1
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-20",
+    "editorial": 26,
+    "sponsored": 1,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-21",
+    "editorial": 45,
+    "sponsored": 4,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-22",
+    "editorial": 50,
+    "sponsored": 1,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-23",
+    "editorial": 32,
+    "sponsored": 5,
+    "unpublished": 1
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-24",
+    "editorial": 28,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-25",
+    "editorial": 21,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-26",
+    "editorial": 29,
+    "sponsored": 1,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-27",
+    "editorial": 35,
+    "sponsored": 1,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-28",
+    "editorial": 40,
+    "sponsored": 7,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-29",
+    "editorial": 41,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-30",
+    "editorial": 35,
+    "sponsored": 2,
+    "unpublished": 0
+  },
+  {
+    "portal": "mega",
+    "date": "2026-10-31",
+    "editorial": 25,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-01",
+    "editorial": 18,
+    "sponsored": 0,
+    "unpublished": 1
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-02",
+    "editorial": 15,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-03",
+    "editorial": 15,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-04",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-05",
+    "editorial": 17,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-06",
+    "editorial": 17,
+    "sponsored": 0,
+    "unpublished": 1
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-07",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-08",
+    "editorial": 17,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-09",
+    "editorial": 17,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-10",
+    "editorial": 14,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-11",
+    "editorial": 20,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-12",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-13",
+    "editorial": 21,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-14",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-15",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-16",
+    "editorial": 14,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-17",
+    "editorial": 15,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-18",
+    "editorial": 14,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-19",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-20",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-21",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-22",
+    "editorial": 15,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-23",
+    "editorial": 15,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-24",
+    "editorial": 14,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-25",
+    "editorial": 14,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-26",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-27",
+    "editorial": 14,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-28",
+    "editorial": 16,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-29",
+    "editorial": 14,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-30",
+    "editorial": 13,
+    "sponsored": 0,
+    "unpublished": 0
+  },
+  {
+    "portal": "megatiempo",
+    "date": "2026-10-31",
+    "editorial": 13,
+    "sponsored": 0,
+    "unpublished": 0
+  }
+]

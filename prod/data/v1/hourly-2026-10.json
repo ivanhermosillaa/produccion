@@ -1,0 +1,3026 @@
+[
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 0,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 1,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 2,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 3,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 4,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 5,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 6,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 7,
+    "editorial": 10
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 8,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 9,
+    "editorial": 14
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 10,
+    "editorial": 15
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 11,
+    "editorial": 16
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 12,
+    "editorial": 21
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 13,
+    "editorial": 19
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 14,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 15,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 16,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 17,
+    "editorial": 19
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 18,
+    "editorial": 15
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 19,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 20,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 21,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 22,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "mon",
+    "hour": 23,
+    "editorial": 8
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 0,
+    "editorial": 8
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 1,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 2,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 3,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 4,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 5,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 6,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 7,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 8,
+    "editorial": 20
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 9,
+    "editorial": 12
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 10,
+    "editorial": 19
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 11,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 12,
+    "editorial": 16
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 13,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 14,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 15,
+    "editorial": 24
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 16,
+    "editorial": 23
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 17,
+    "editorial": 21
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 18,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 19,
+    "editorial": 16
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 20,
+    "editorial": 14
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 21,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 22,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "tue",
+    "hour": 23,
+    "editorial": 8
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 0,
+    "editorial": 7
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 1,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 2,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 3,
+    "editorial": 6
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 4,
+    "editorial": 2
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 5,
+    "editorial": 2
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 6,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 7,
+    "editorial": 12
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 8,
+    "editorial": 21
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 9,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 10,
+    "editorial": 19
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 11,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 12,
+    "editorial": 20
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 13,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 14,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 15,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 16,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 17,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 18,
+    "editorial": 10
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 19,
+    "editorial": 9
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 20,
+    "editorial": 12
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 21,
+    "editorial": 8
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 22,
+    "editorial": 6
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "wed",
+    "hour": 23,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 0,
+    "editorial": 9
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 1,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 2,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 3,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 4,
+    "editorial": 2
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 5,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 6,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 7,
+    "editorial": 14
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 8,
+    "editorial": 24
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 9,
+    "editorial": 16
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 10,
+    "editorial": 26
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 11,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 12,
+    "editorial": 27
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 13,
+    "editorial": 15
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 14,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 15,
+    "editorial": 24
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 16,
+    "editorial": 20
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 17,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 18,
+    "editorial": 25
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 19,
+    "editorial": 23
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 20,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 21,
+    "editorial": 9
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 22,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "thu",
+    "hour": 23,
+    "editorial": 10
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 0,
+    "editorial": 8
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 1,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 2,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 3,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 4,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 5,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 6,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 7,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 8,
+    "editorial": 26
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 9,
+    "editorial": 20
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 10,
+    "editorial": 23
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 11,
+    "editorial": 23
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 12,
+    "editorial": 21
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 13,
+    "editorial": 15
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 14,
+    "editorial": 19
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 15,
+    "editorial": 30
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 16,
+    "editorial": 22
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 17,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 18,
+    "editorial": 23
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 19,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 20,
+    "editorial": 14
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 21,
+    "editorial": 8
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 22,
+    "editorial": 7
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "fri",
+    "hour": 23,
+    "editorial": 9
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 0,
+    "editorial": 6
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 1,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 2,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 3,
+    "editorial": 6
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 4,
+    "editorial": 1
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 5,
+    "editorial": 2
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 6,
+    "editorial": 4
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 7,
+    "editorial": 6
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 8,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 9,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 10,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 11,
+    "editorial": 19
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 12,
+    "editorial": 18
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 13,
+    "editorial": 14
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 14,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 15,
+    "editorial": 16
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 16,
+    "editorial": 19
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 17,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 18,
+    "editorial": 17
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 19,
+    "editorial": 16
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 20,
+    "editorial": 15
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 21,
+    "editorial": 15
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 22,
+    "editorial": 12
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sat",
+    "hour": 23,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 0,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 1,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 2,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 3,
+    "editorial": 2
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 4,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 6,
+    "editorial": 3
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 7,
+    "editorial": 5
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 8,
+    "editorial": 12
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 9,
+    "editorial": 14
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 10,
+    "editorial": 16
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 11,
+    "editorial": 15
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 12,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 13,
+    "editorial": 9
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 14,
+    "editorial": 14
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 15,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 16,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 17,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 18,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 19,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 20,
+    "editorial": 16
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 21,
+    "editorial": 13
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 22,
+    "editorial": 11
+  },
+  {
+    "portal": "meganoticias",
+    "weekday": "sun",
+    "hour": 23,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 0,
+    "editorial": 3
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 1,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 6,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 7,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 8,
+    "editorial": 5
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 9,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 10,
+    "editorial": 14
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 11,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 12,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 13,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 14,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 15,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 16,
+    "editorial": 10
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 17,
+    "editorial": 11
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 18,
+    "editorial": 16
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 19,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 20,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 21,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 22,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "mon",
+    "hour": 23,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 0,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 1,
+    "editorial": 2
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 6,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 7,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 8,
+    "editorial": 3
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 9,
+    "editorial": 11
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 10,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 11,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 12,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 13,
+    "editorial": 5
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 14,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 15,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 16,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 17,
+    "editorial": 10
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 18,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 19,
+    "editorial": 2
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 20,
+    "editorial": 3
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 21,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 22,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "tue",
+    "hour": 23,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 0,
+    "editorial": 11
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 1,
+    "editorial": 2
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 2,
+    "editorial": 1
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 6,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 7,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 8,
+    "editorial": 2
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 9,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 10,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 11,
+    "editorial": 12
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 12,
+    "editorial": 11
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 13,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 14,
+    "editorial": 5
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 15,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 16,
+    "editorial": 10
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 17,
+    "editorial": 15
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 18,
+    "editorial": 18
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 19,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 20,
+    "editorial": 5
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 21,
+    "editorial": 5
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 22,
+    "editorial": 14
+  },
+  {
+    "portal": "mega",
+    "weekday": "wed",
+    "hour": 23,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 0,
+    "editorial": 18
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 1,
+    "editorial": 2
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 6,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 7,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 8,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 9,
+    "editorial": 18
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 10,
+    "editorial": 16
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 11,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 12,
+    "editorial": 13
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 13,
+    "editorial": 15
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 14,
+    "editorial": 10
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 15,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 16,
+    "editorial": 12
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 17,
+    "editorial": 18
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 18,
+    "editorial": 17
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 19,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 20,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 21,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 22,
+    "editorial": 19
+  },
+  {
+    "portal": "mega",
+    "weekday": "thu",
+    "hour": 23,
+    "editorial": 10
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 0,
+    "editorial": 16
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 1,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 6,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 7,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 8,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 9,
+    "editorial": 18
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 10,
+    "editorial": 13
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 11,
+    "editorial": 11
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 12,
+    "editorial": 12
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 13,
+    "editorial": 13
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 14,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 15,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 16,
+    "editorial": 16
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 17,
+    "editorial": 15
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 18,
+    "editorial": 25
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 19,
+    "editorial": 3
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 20,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 21,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 22,
+    "editorial": 3
+  },
+  {
+    "portal": "mega",
+    "weekday": "fri",
+    "hour": 23,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 0,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 1,
+    "editorial": 1
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 6,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 7,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 8,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 9,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 10,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 11,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 12,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 13,
+    "editorial": 3
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 14,
+    "editorial": 2
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 15,
+    "editorial": 12
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 16,
+    "editorial": 8
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 17,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 18,
+    "editorial": 12
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 19,
+    "editorial": 10
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 20,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 21,
+    "editorial": 10
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 22,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "sat",
+    "hour": 23,
+    "editorial": 15
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 0,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 1,
+    "editorial": 1
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 6,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 7,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 8,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 9,
+    "editorial": 5
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 10,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 11,
+    "editorial": 5
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 12,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 13,
+    "editorial": 2
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 14,
+    "editorial": 2
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 15,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 16,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 17,
+    "editorial": 9
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 18,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 19,
+    "editorial": 7
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 20,
+    "editorial": 4
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 21,
+    "editorial": 6
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 22,
+    "editorial": 0
+  },
+  {
+    "portal": "mega",
+    "weekday": "sun",
+    "hour": 23,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 0,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 1,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 6,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 7,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 8,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 9,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 10,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 11,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 12,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 13,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 14,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 15,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 16,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 17,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 18,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 19,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 20,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 21,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 22,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "mon",
+    "hour": 23,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 0,
+    "editorial": 7
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 1,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 6,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 7,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 8,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 9,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 10,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 11,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 12,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 13,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 14,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 15,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 16,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 17,
+    "editorial": 7
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 18,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 19,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 20,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 21,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 22,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "tue",
+    "hour": 23,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 0,
+    "editorial": 7
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 1,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 6,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 7,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 8,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 9,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 10,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 11,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 12,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 13,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 14,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 15,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 16,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 17,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 18,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 19,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 20,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 21,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 22,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "wed",
+    "hour": 23,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 0,
+    "editorial": 8
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 1,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 6,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 7,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 8,
+    "editorial": 8
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 9,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 10,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 11,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 12,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 13,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 14,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 15,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 16,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 17,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 18,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 19,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 20,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 21,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 22,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "thu",
+    "hour": 23,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 0,
+    "editorial": 7
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 1,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 6,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 7,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 8,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 9,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 10,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 11,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 12,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 13,
+    "editorial": 8
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 14,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 15,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 16,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 17,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 18,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 19,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 20,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 21,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 22,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "fri",
+    "hour": 23,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 0,
+    "editorial": 7
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 1,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 2,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 3,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 5,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 6,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 7,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 8,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 9,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 10,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 11,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 12,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 13,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 14,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 15,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 16,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 17,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 18,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 19,
+    "editorial": 7
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 20,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 21,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 22,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sat",
+    "hour": 23,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 0,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 1,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 2,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 3,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 4,
+    "editorial": 0
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 5,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 6,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 7,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 8,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 9,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 10,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 11,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 12,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 13,
+    "editorial": 2
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 14,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 15,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 16,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 17,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 18,
+    "editorial": 5
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 19,
+    "editorial": 6
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 20,
+    "editorial": 3
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 21,
+    "editorial": 4
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 22,
+    "editorial": 1
+  },
+  {
+    "portal": "megatiempo",
+    "weekday": "sun",
+    "hour": 23,
+    "editorial": 0
+  }
+]

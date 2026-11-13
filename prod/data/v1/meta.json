@@ -1,0 +1,15 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-11-13T18:27:21",
+  "timezone": "America/Santiago",
+  "months": [
+    "2026-10"
+  ],
+  "portals": [
+    "meganoticias",
+    "mega",
+    "megatiempo"
+  ],
+  "total_articles": 3660,
+  "notes": "Datos de ejemplo. Horas en hora local de Chile según el export del CMS."
+}

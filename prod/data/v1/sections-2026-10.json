@@ -1,0 +1,218 @@
+[
+  {
+    "portal": "meganoticias",
+    "section": "Nacional",
+    "editorial": 1284,
+    "share_pct": 62.8
+  },
+  {
+    "portal": "meganoticias",
+    "section": "Tendencias",
+    "editorial": 279,
+    "share_pct": 13.6
+  },
+  {
+    "portal": "meganoticias",
+    "section": "Dato útil",
+    "editorial": 228,
+    "share_pct": 11.1
+  },
+  {
+    "portal": "meganoticias",
+    "section": "Mundo",
+    "editorial": 183,
+    "share_pct": 8.9
+  },
+  {
+    "portal": "meganoticias",
+    "section": "Noticieros",
+    "editorial": 28,
+    "share_pct": 1.4
+  },
+  {
+    "portal": "meganoticias",
+    "section": "Deportes",
+    "editorial": 25,
+    "share_pct": 1.2
+  },
+  {
+    "portal": "meganoticias",
+    "section": "Reportajes",
+    "editorial": 10,
+    "share_pct": 0.5
+  },
+  {
+    "portal": "meganoticias",
+    "section": "Opinión",
+    "editorial": 9,
+    "share_pct": 0.4
+  },
+  {
+    "portal": "mega",
+    "section": "Entretenimiento",
+    "editorial": 256,
+    "share_pct": 25.2
+  },
+  {
+    "portal": "mega",
+    "section": "Mucho Gusto",
+    "editorial": 157,
+    "share_pct": 15.5
+  },
+  {
+    "portal": "mega",
+    "section": "La Baronesa",
+    "editorial": 135,
+    "share_pct": 13.3
+  },
+  {
+    "portal": "mega",
+    "section": "Volverías con tu Ex",
+    "editorial": 106,
+    "share_pct": 10.5
+  },
+  {
+    "portal": "mega",
+    "section": "Prohibida Obsesión",
+    "editorial": 54,
+    "share_pct": 5.3
+  },
+  {
+    "portal": "mega",
+    "section": "Carmen Gloria, Fuerte & Claro",
+    "editorial": 48,
+    "share_pct": 4.7
+  },
+  {
+    "portal": "mega",
+    "section": "Reunión de Superados",
+    "editorial": 46,
+    "share_pct": 4.5
+  },
+  {
+    "portal": "mega",
+    "section": "Dale Play",
+    "editorial": 38,
+    "share_pct": 3.7
+  },
+  {
+    "portal": "mega",
+    "section": "La Roja",
+    "editorial": 33,
+    "share_pct": 3.3
+  },
+  {
+    "portal": "mega",
+    "section": "Coliseo",
+    "editorial": 32,
+    "share_pct": 3.2
+  },
+  {
+    "portal": "mega",
+    "section": "Programación",
+    "editorial": 30,
+    "share_pct": 3.0
+  },
+  {
+    "portal": "mega",
+    "section": "Mi humano y yo",
+    "editorial": 14,
+    "share_pct": 1.4
+  },
+  {
+    "portal": "mega",
+    "section": "Detrás del Muro",
+    "editorial": 13,
+    "share_pct": 1.3
+  },
+  {
+    "portal": "mega",
+    "section": "De paseo",
+    "editorial": 11,
+    "share_pct": 1.1
+  },
+  {
+    "portal": "mega",
+    "section": "El Juicio de los ex",
+    "editorial": 10,
+    "share_pct": 1.0
+  },
+  {
+    "portal": "mega",
+    "section": "Actualidad",
+    "editorial": 7,
+    "share_pct": 0.7
+  },
+  {
+    "portal": "mega",
+    "section": "Viajando Ando",
+    "editorial": 5,
+    "share_pct": 0.5
+  },
+  {
+    "portal": "mega",
+    "section": "Miss Universo Chile",
+    "editorial": 5,
+    "share_pct": 0.5
+  },
+  {
+    "portal": "mega",
+    "section": "Agua Viva",
+    "editorial": 4,
+    "share_pct": 0.4
+  },
+  {
+    "portal": "mega",
+    "section": "Atrapados 133",
+    "editorial": 4,
+    "share_pct": 0.4
+  },
+  {
+    "portal": "mega",
+    "section": "Dale color",
+    "editorial": 3,
+    "share_pct": 0.3
+  },
+  {
+    "portal": "mega",
+    "section": "Exclusivo",
+    "editorial": 2,
+    "share_pct": 0.2
+  },
+  {
+    "portal": "mega",
+    "section": "Festival de Viña",
+    "editorial": 1,
+    "share_pct": 0.1
+  },
+  {
+    "portal": "megatiempo",
+    "section": "Pronóstico",
+    "editorial": 346,
+    "share_pct": 71.2
+  },
+  {
+    "portal": "megatiempo",
+    "section": "Noticias",
+    "editorial": 104,
+    "share_pct": 21.4
+  },
+  {
+    "portal": "megatiempo",
+    "section": "Informe Diario",
+    "editorial": 30,
+    "share_pct": 6.2
+  },
+  {
+    "portal": "megatiempo",
+    "section": "Te explica",
+    "editorial": 4,
+    "share_pct": 0.8
+  },
+  {
+    "portal": "megatiempo",
+    "section": "Cambio climático",
+    "editorial": 2,
+    "share_pct": 0.4
+  }
+]

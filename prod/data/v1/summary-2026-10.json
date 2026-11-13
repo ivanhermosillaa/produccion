@@ -1,0 +1,44 @@
+[
+  {
+    "portal": "meganoticias",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "days": 31
+    },
+    "published_total": 2080,
+    "editorial": 2046,
+    "sponsored": 34,
+    "unpublished": 27,
+    "active_authors": 19,
+    "avg_daily_editorial": 66.0
+  },
+  {
+    "portal": "mega",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "days": 31
+    },
+    "published_total": 1051,
+    "editorial": 1014,
+    "sponsored": 37,
+    "unpublished": 14,
+    "active_authors": 14,
+    "avg_daily_editorial": 32.7
+  },
+  {
+    "portal": "megatiempo",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "days": 31
+    },
+    "published_total": 486,
+    "editorial": 486,
+    "sponsored": 0,
+    "unpublished": 2,
+    "active_authors": 6,
+    "avg_daily_editorial": 15.7
+  }
+]

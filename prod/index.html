@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Producción editorial · Meganoticias, Mega y Megatiempo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+[hidden]{display:none!important}
+:root{--bg:#F4F6F9;--surface:#fff;--text:#18202F;--muted:#6A7385;--line:#E4E8EF;--radius:14px;--shadow:0 1px 2px rgba(16,24,40,.06)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Roboto,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.5}
+/* Barra superior */
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:14px 32px;background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:40px;height:40px;border-radius:10px;background:#18202F;color:#fff;display:grid;place-items:center;font-weight:700}
+h1{font-size:18px;margin:0;font-weight:700}
+.sub{margin:0;color:var(--muted);font-size:13px}
+.controls{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.period{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.field{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:4px}
+select,input{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px;min-height:38px}
+button{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);padding:8px 14px;border-radius:8px;cursor:pointer}
+button:not(:disabled):hover{border-color:var(--text)}
+button:disabled{opacity:.45;cursor:default}
+:focus-visible{outline:2px solid #18202F;outline-offset:2px}
+.tabs{display:inline-flex;background:#EEF1F6;border-radius:10px;padding:4px;gap:4px;flex-wrap:wrap}
+.tabs button{border:0;background:transparent;padding:8px 14px;border-radius:7px;font-weight:500;color:var(--muted);display:inline-flex;align-items:center}
+.tabs button:hover{color:var(--text)}
+.tabs button[aria-pressed=true]{background:var(--surface);color:var(--text);box-shadow:var(--shadow);font-weight:600}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:8px;flex:none}
+/* Layout */
+.wrap{max-width:1280px;margin:0 auto;padding:24px 32px 48px;display:grid;gap:20px}
+.ctx{margin:0;color:var(--muted);font-size:13px}
+.grid-2{display:grid;grid-template-columns:1.6fr 1fr;gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);min-width:0}
+.card-h{margin-bottom:16px}
+.card-h h2{font-size:16px;margin:0;font-weight:600}
+.card-h p{margin:2px 0 0;color:var(--muted);font-size:13px}
+.row{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.filters{display:flex;gap:10px;flex-wrap:wrap}
+.chart{position:relative;height:300px}
+.muted{color:var(--muted)}
+.note{font-size:12px;color:var(--muted);margin:14px 0 0}
+/* Comparativa */
+.pname{border:0;background:transparent;padding:0;font-weight:600;display:inline-flex;align-items:center;cursor:pointer;color:var(--text)}
+.pname:hover{text-decoration:underline}
+tr.selected{background:#F3F6FB}
+tr[data-p]{cursor:pointer}
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow)}
+.kpi-label{font-size:13px;color:var(--muted);margin:0 0 6px}
+.kpi-value{font-size:28px;font-weight:700;margin:0;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.delta{display:block;font-size:12px;color:var(--muted);margin-top:6px}
+.delta.up{color:#137A60}.delta.down{color:#8A1F1A}
+/* Tablas */
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600;white-space:nowrap}
+th[data-k]{cursor:pointer;user-select:none}
+th[data-k]:hover{color:var(--text)}
+th[aria-sort=ascending]::after{content:" ▲"}
+th[aria-sort=descending]::after{content:" ▼"}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+td.title{max-width:440px}
+td.title a{color:var(--text);text-decoration:none}
+td.title a:hover{text-decoration:underline}
+.nowrap{white-space:nowrap;color:var(--muted)}
+.hour{white-space:nowrap;font-variant-numeric:tabular-nums}
+tbody tr:not(.selected):hover{background:#F8FAFC}
+.empty{text-align:center;color:var(--muted);padding:28px}
+.chip{font-size:12px;background:#EEF1F6;color:var(--text);padding:2px 8px;border-radius:999px;white-space:nowrap}
+.fmt{font-size:12px}
+.status{font-size:12px;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.s-editorial{background:#E3F5EF;color:#137A60}
+.s-sponsored{background:#EDEFF3;color:#4B5366}
+.s-unpublished{background:#FDECEA;color:#8A1F1A}
+.tag{font-size:11px;background:#EEF0F4;color:var(--muted);padding:1px 6px;border-radius:6px;margin-left:6px}
+.pager{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:16px;font-size:13px;color:var(--muted)}
+.bar{height:8px;background:#EEF1F6;border-radius:4px;overflow:hidden;min-width:120px}
+.bar span{display:block;height:100%}
+/* Mapa de calor */
+.heat{border-collapse:separate;border-spacing:3px;min-width:900px;font-size:12px}
+.heat th,.heat td{padding:0;border:0}
+.hcol{font-size:10px;text-align:center;color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0;width:34px}
+.hday{text-align:left;padding-right:10px!important;font-size:12px;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:500}
+.hm{width:34px;height:30px;text-align:center;border-radius:5px;font-size:11px;font-variant-numeric:tabular-nums}
+.heat .num{padding-left:10px;font-size:12px}
+/* Leyenda mapa de calor */
+.legend{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-top:14px}
+.ramp{width:180px;height:10px;border-radius:5px;background:linear-gradient(90deg,#FFF9C4,#FDAE61,#D7191C)}
+/* Temas */
+.cloud{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center;justify-content:center;min-height:180px;padding:8px 0}
+.topic{border:0;background:transparent;padding:2px 6px;font-weight:600;cursor:pointer;line-height:1.2;border-radius:6px}
+.topic:hover{background:#F4F6F9;text-decoration:underline}
+@media (max-width:960px){.grid-2{grid-template-columns:1fr}.wrap{padding:16px}.topbar{padding:14px 16px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">M</span>
+    <div>
+      <h1>Producción editorial</h1>
+      <p class="sub">Meganoticias · Mega · Megatiempo</p>
+    </div>
+  </div>
+  <div class="controls">
+    <div class="tabs" id="tabs" role="group" aria-label="Seleccionar sitio"></div>
+    <div class="period" role="group" aria-label="Periodo">
+      <label class="field"><span>Periodo</span>
+        <select id="periodMode">
+          <option value="month">Mes</option>
+          <option value="year">Año</option>
+          <option value="range">Rango de fechas</option>
+        </select>
+      </label>
+      <label class="field" id="fldMonth"><span>Mes</span><select id="monthSel"></select></label>
+      <label class="field" id="fldYear" hidden><span>Año</span><select id="yearSel"></select></label>
+      <div class="period" id="fldRange" hidden>
+        <label class="field"><span>Desde</span><input type="date" id="fromDate"></label>
+        <label class="field"><span>Hasta</span><input type="date" id="toDate"></label>
+        <label class="field"><span>Atajo</span>
+          <select id="presetSel">
+            <option value="">Personalizado</option>
+            <option value="7">Últimos 7 días</option>
+            <option value="30">Últimos 30 días</option>
+            <option value="all">Todo el periodo</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <p class="ctx" id="ctx"></p>
+
+  <section class="card">
+    <header class="card-h">
+      <h2>Comparativa de portales</h2>
+      <p>Periodo seleccionado. Haz clic en un portal para verlo en detalle.</p>
+    </header>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Portal</th>
+            <th class="num">Editoriales</th>
+            <th class="num">Patrocinadas</th>
+            <th class="num">No publicadas</th>
+            <th class="num">Autores activos</th>
+            <th class="num">Promedio diario</th>
+            <th class="num">Participación editorial</th>
+          </tr>
+        </thead>
+        <tbody id="compBody"></tbody>
+      </table>
+    </div>
+    <p class="note">Promedio diario: editoriales publicadas dividido entre los días calendario del periodo.</p>
+  </section>
+
+  <section class="kpis" id="kpis" aria-label="Tarjetas resumen del sitio seleccionado"></section>
+
+  <section class="grid-2">
+    <article class="card">
+      <header class="card-h">
+        <h2>Publicaciones por día</h2>
+        <p id="dailyNote">Editorial y patrocinado</p>
+      </header>
+      <div class="chart"><canvas id="chartDaily" role="img" aria-label="Publicaciones del sitio"></canvas></div>
+    </article>
+    <article class="card">
+      <header class="card-h">
+        <h2>Publicaciones por sección</h2>
+        <p>Solo editorial</p>
+      </header>
+      <div class="chart"><canvas id="chartSections" role="img" aria-label="Publicaciones por sección"></canvas></div>
+    </article>
+  </section>
+
+  <section class="card">
+    <header class="card-h">
+      <h2>Mapa de calor: publicación por hora</h2>
+      <p>Publicadas editoriales por día de la semana y hora local. Más intenso, más publicaciones.</p>
+    </header>
+    <div class="table-wrap">
+      <table class="heat" id="heatTable" aria-label="Mapa de calor de publicaciones por hora"></table>
+    </div>
+    <div class="legend"><span>Menos</span><span class="ramp"></span><span>Más publicaciones</span></div>
+  </section>
+
+  <section class="card">
+    <header class="card-h row">
+      <div>
+        <h2>Periodistas</h2>
+        <p id="authorsCount" class="muted"></p>
+      </div>
+      <input type="search" id="authorSearch" placeholder="Buscar periodista" aria-label="Buscar periodista">
+    </header>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th data-k="author" tabindex="0">Periodista</th>
+            <th data-k="published" tabindex="0" class="num">Publicadas</th>
+            <th data-k="activeDays" tabindex="0" class="num">Días activos</th>
+            <th data-k="share" tabindex="0" class="num">% del sitio</th>
+            <th data-k="topSection" tabindex="0">Sección principal</th>
+          </tr>
+        </thead>
+        <tbody id="authorsBody"></tbody>
+      </table>
+    </div>
+    <p class="note">Porcentaje calculado sobre publicadas editoriales del sitio en el periodo.</p>
+  </section>
+
+  <section class="card">
+    <header class="card-h">
+      <h2>Temas más utilizados</h2>
+      <p id="topicsNote">Palabras más frecuentes en los títulos publicados. Haz clic en una palabra para filtrar artículos.</p>
+    </header>
+    <div class="cloud" id="cloud"></div>
+  </section>
+  <section class="card" id="articlesCard">
+    <header class="card-h row">
+      <div>
+        <h2>Artículos</h2>
+        <p id="articlesCount" class="muted"></p>
+      </div>
+      <div class="filters">
+        <input type="search" id="articleSearch" placeholder="Título o periodista" aria-label="Buscar artículo">
+        <select id="sectionFilter" aria-label="Filtrar por sección"></select>
+        <select id="fmtFilter" aria-label="Filtrar por formato" hidden></select>
+        <select id="statusFilter" aria-label="Filtrar por estado">
+          <option value="">Todos los estados</option>
+          <option value="editorial">Publicado</option>
+          <option value="sponsored">Patrocinado</option>
+          <option value="unpublished">No publicado</option>
+        </select>
+      </div>
+    </header>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Fecha</th><th>Hora de publicación</th><th>Sección</th><th>Título</th><th>Periodista</th><th>Estado</th></tr></thead>
+        <tbody id="articlesBody"></tbody>
+      </table>
+    </div>
+    <footer class="pager">
+      <button id="prevPage" type="button">Anterior</button>
+      <span id="pageInfo"></span>
+      <button id="nextPage" type="button">Siguiente</button>
+    </footer>
+  </section>
+</main>
+
+<footer style="max-width:1280px;margin:0 auto;padding:0 32px 32px;color:var(--muted);font-size:12px">
+  Datos generados el <span id="genAt"></span>. Horas según el export del CMS.
+</footer>
+
+<script>
+const DATA_BASE = "data/v1/";
+
+async function getJSON(name) {
+  const res = await fetch(DATA_BASE + name, { cache: "no-cache" });
+  if (!res.ok) throw new Error(`${name}: HTTP ${res.status}`);
+  return res.json();
+}
+
+async function loadData() {
+  const meta = await getJSON("meta.json");
+  const [portals, lists] = await Promise.all([
+    getJSON("portals.json"),
+    Promise.all(meta.months.map(m => getJSON(`articles-${m}.json`))),
+  ]);
+  const rows = lists.flat().map(a => ({
+    p: a.portal,
+    d: a.published_at.slice(0, 16),
+    s: a.section,
+    f: a.format || "",
+    t: a.title,
+    a: a.author,
+    st: a.status === "published" ? "p" : "u",
+    sp: a.content_type === "sponsored" ? 1 : 0,
+    u: a.url,
+  }));
+  const g = meta.generated_at;
+  return {
+    generated: `${g.slice(8, 10)}/${g.slice(5, 7)}/${g.slice(0, 4)} ${g.slice(11, 16)}`,
+    portals: portals.map(p => ({ id: p.id, name: p.name, color: p.color })),
+    rows,
+  };
+}
+
+function showError(err) {
+  console.error(err);
+  const box = document.createElement("div");
+  box.setAttribute("role", "alert");
+  box.style.cssText = "margin:24px auto;max-width:720px;padding:16px 20px;border-radius:10px;background:#FDECEA;color:#8A1F1A;border:1px solid #F5C6C2;font-family:system-ui,sans-serif";
+  box.textContent = "No se pudieron cargar los datos. Revisa que la carpeta data/v1 exista y que la página se abra desde un servidor (no con doble clic). Detalle: " + err.message;
+  document.querySelector("main")?.prepend(box);
+}
+
+(async () => {
+  "use strict";
+  const DATA = await loadData();
+  const ALL = DATA.rows;
+  const PORTALS = DATA.portals;
+  const PAGE = 50;
+  const MIN_N = 5;
+  const SPONSOR = "#A3ABBA";
+  const DAYS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+  const DAYS_S = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
+  const MONTHS = [...new Set(ALL.map(r => r.d.slice(0, 7)))].sort();
+  const YEARS = [...new Set(ALL.map(r => r.d.slice(0, 4)))].sort();
+  const DATES = ALL.map(r => r.d.slice(0, 10));
+  const MIN_DATE = DATES.reduce((a, b) => (b < a ? b : a));
+  const MAX_DATE = DATES.reduce((a, b) => (b > a ? b : a));
+  const INSTITUTIONAL = new Set(PORTALS.map(p => p.name));
+  const STL = { editorial: "Publicado", sponsored: "Patrocinado", unpublished: "No publicado" };
+  const STOP_RAW = "de la que el en y a los del se las por un para con no una su al lo como mas pero sus le ya o este si porque esta entre cuando muy sin sobre tambien me hasta hay donde quien desde todo nos durante todos uno les ni contra otros ese eso ante ellos esto antes algunos que unos otro otras otra tanto esa estos mucho quienes nada muchos cual poco ella estar estas algunas algo nosotros son fue ser tiene han dos video videos hoy ahora tras segun asi sera fueron";
+
+  const $ = id => document.getElementById(id);
+  const nf = new Intl.NumberFormat("es-CL");
+  const nf1 = new Intl.NumberFormat("es-CL", { maximumFractionDigits: 1 });
+  const nfs = new Intl.NumberFormat("es-CL", { maximumFractionDigits: 1, signDisplay: "always" });
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const norm = s => String(s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const STOP = new Set(STOP_RAW.split(" ").map(norm));
+  const SITE_WORDS = new Set(PORTALS.flatMap(p => norm(p.name).split(" ")));
+  const isEd = r => r.st === "p" && !r.sp;
+  const kind = r => r.st === "u" ? "unpublished" : (r.sp ? "sponsored" : "editorial");
+  const hourOf = r => Number(r.d.slice(11, 13));
+  const pad2 = n => String(n).padStart(2, "0");
+
+  const toMs = s => { const [y, m, d] = s.split("-").map(Number); return Date.UTC(y, m - 1, d); };
+  const toYmd = ms => new Date(ms).toISOString().slice(0, 10);
+  const addDays = (s, n) => toYmd(toMs(s) + n * 864e5);
+  const spanDays = (a, b) => Math.round((toMs(b) - toMs(a)) / 864e5) + 1;
+  const dowOf = s => (new Date(toMs(s)).getUTCDay() + 6) % 7;
+  const daysIn = m => { const [y, mo] = m.split("-").map(Number); return new Date(Date.UTC(y, mo, 0)).getUTCDate(); };
+  const monthBounds = m => ({ from: `${m}-01`, to: `${m}-${pad2(daysIn(m))}` });
+  const yearBounds = y => ({ from: `${y}-01-01`, to: `${y}-12-31` });
+  const monthLong = m => {
+    const [y, mo] = m.split("-").map(Number);
+    const s = new Date(Date.UTC(y, mo - 1, 1)).toLocaleDateString("es-CL", { month: "long", year: "numeric", timeZone: "UTC" });
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  };
+  const monthShort = m => {
+    const [y, mo] = m.split("-").map(Number);
+    return new Date(Date.UTC(y, mo - 1, 1)).toLocaleDateString("es-CL", { month: "short", year: "2-digit", timeZone: "UTC" });
+  };
+  const fmtYmd = s => `${s.slice(8, 10)}/${s.slice(5, 7)}/${s.slice(0, 4)}`;
+  const fmtDateTime = d => `${fmtYmd(d)} ${d.slice(11, 16)}`;
+  const inRange = (r, b) => { const d = r.d.slice(0, 10); return d >= b.from && d <= b.to; };
+  const portalOf = id => PORTALS.find(p => p.id === id);
+  const portalRows = (pid, b) => ALL.filter(r => r.p === pid && inRange(r, b));
+
+  const S = {
+    mode: "month", month: MONTHS[MONTHS.length - 1], year: YEARS[YEARS.length - 1],
+    from: MIN_DATE, to: MAX_DATE,
+    portal: PORTALS[0].id, b: null, rows: [],
+    sec: "", fmt: "", kind: "", q: "", page: 1, aq: "",
+    sort: { k: "published", dir: -1 }, charts: {},
+  };
+
+  /* ---------- Periodo ---------- */
+
+  function bounds() {
+    if (S.mode === "month") return monthBounds(S.month);
+    if (S.mode === "year") return yearBounds(S.year);
+    return { from: S.from, to: S.to };
+  }
+
+  function prevBounds(b) {
+    if (S.mode === "month") {
+      const i = MONTHS.indexOf(S.month);
+      return i > 0 ? monthBounds(MONTHS[i - 1]) : null;
+    }
+    if (S.mode === "year") {
+      const y = String(Number(S.year) - 1);
+      return YEARS.includes(y) ? yearBounds(y) : null;
+    }
+    const len = spanDays(b.from, b.to);
+    return { from: addDays(b.from, -len), to: addDays(b.from, -1) };
+  }
+
+  function prevLabel() {
+    if (S.mode === "month") {
+      const i = MONTHS.indexOf(S.month);
+      return i > 0 ? monthLong(MONTHS[i - 1]).toLowerCase() : "";
+    }
+    if (S.mode === "year") return String(Number(S.year) - 1);
+    return "periodo anterior de igual duración";
+  }
+
+  /* Agrupa por día si el periodo tiene hasta 62 días; si no, por mes */
+  function buckets(b) {
+    if (spanDays(b.from, b.to) <= 62) {
+      const keys = [];
+      for (let k = b.from; k <= b.to; k = addDays(k, 1)) keys.push(k);
+      return { mode: "day", keys, labels: keys.map(k => `${k.slice(8, 10)}/${k.slice(5, 7)}`) };
+    }
+    const keys = [];
+    let m = b.from.slice(0, 7);
+    const end = b.to.slice(0, 7);
+    while (m <= end) {
+      keys.push(m);
+      const [y, mo] = m.split("-").map(Number);
+      m = new Date(Date.UTC(y, mo, 1)).toISOString().slice(0, 7);
+    }
+    return { mode: "month", keys, labels: keys.map(monthShort) };
+  }
+
+  function bucketCounts(rows, b, pred) {
+    const bk = buckets(b);
+    const idx = new Map(bk.keys.map((k, i) => [k, i]));
+    const data = new Array(bk.keys.length).fill(0);
+    for (const r of rows) {
+      if (!pred(r)) continue;
+      const i = idx.get(bk.mode === "day" ? r.d.slice(0, 10) : r.d.slice(0, 7));
+      if (i !== undefined) data[i]++;
+    }
+    return { labels: bk.labels, data };
+  }
+
+  function stats(rows, b) {
+    const ed = rows.filter(isEd);
+    return {
+      editorial: ed.length,
+      sponsored: rows.filter(r => r.st === "p" && r.sp).length,
+      unpublished: rows.filter(r => r.st === "u").length,
+      authors: new Set(ed.map(r => r.a)).size,
+      avg: ed.length / spanDays(b.from, b.to),
+    };
+  }
+
+  function drawChart(key, id, cfg) {
+    if (S.charts[key]) S.charts[key].destroy();
+    S.charts[key] = new Chart($(id), cfg);
+  }
+
+  /* ---------- Barra superior y contexto ---------- */
+
+  function renderHeader() {
+    $("tabs").innerHTML = PORTALS.map(p =>
+      `<button type="button" data-p="${p.id}" aria-pressed="${p.id === S.portal}">` +
+      `<span class="dot" style="background:${p.color}"></span>${esc(p.name)}</button>`).join("");
+    $("periodMode").value = S.mode;
+    $("fldMonth").hidden = S.mode !== "month";
+    $("fldYear").hidden = S.mode !== "year";
+    $("fldRange").hidden = S.mode !== "range";
+    $("monthSel").value = S.month;
+    $("yearSel").value = S.year;
+    $("fromDate").value = S.from;
+    $("toDate").value = S.to;
+    const n = spanDays(S.b.from, S.b.to);
+    $("ctx").textContent = `${portalOf(S.portal).name} · ${fmtYmd(S.b.from)} – ${fmtYmd(S.b.to)} · ${nf.format(n)} días`;
+  }
+
+  /* ---------- Comparativa ---------- */
+
+  function renderComparison() {
+    const data = PORTALS.map(p => {
+      const rows = portalRows(p.id, S.b);
+      return { p, s: stats(rows, S.b) };
+    });
+    const totalEd = data.reduce((a, d) => a + d.s.editorial, 0);
+    $("compBody").innerHTML = data.map(({ p, s }) => `
+      <tr data-p="${p.id}" class="${p.id === S.portal ? "selected" : ""}">
+        <td><span class="pname"><span class="dot" style="background:${p.color}"></span>${esc(p.name)}</span></td>
+        <td class="num">${nf.format(s.editorial)}</td>
+        <td class="num">${nf.format(s.sponsored)}</td>
+        <td class="num">${nf.format(s.unpublished)}</td>
+        <td class="num">${nf.format(s.authors)}</td>
+        <td class="num">${nf1.format(s.avg)}</td>
+        <td class="num">${nf1.format(totalEd ? s.editorial / totalEd * 100 : 0)} %</td>
+      </tr>`).join("");
+  }
+
+  /* ---------- Tarjetas resumen ---------- */
+
+  function renderKPIs() {
+    const cur = stats(S.rows, S.b);
+    const pb = prevBounds(S.b);
+    const prevRows = pb ? portalRows(S.portal, pb) : [];
+    const prev = pb && prevRows.length ? stats(prevRows, pb) : null;
+    const items = [
+      { label: "Publicadas editoriales", k: "editorial", f: nf },
+      { label: "Patrocinadas publicadas", k: "sponsored", f: nf },
+      { label: "No publicadas", k: "unpublished", f: nf },
+      { label: "Autores activos", k: "authors", f: nf },
+      { label: "Promedio diario editorial", k: "avg", f: nf1 },
+    ];
+    $("kpis").innerHTML = items.map(it => {
+      const v = cur[it.k];
+      let delta = `<span class="delta">Sin base de comparación</span>`;
+      if (prev && prev[it.k]) {
+        const pct = (v - prev[it.k]) / prev[it.k] * 100;
+        delta = `<span class="delta ${pct >= 0 ? "up" : "down"}">${nfs.format(pct)} % vs. ${esc(prevLabel())}</span>`;
+      }
+      return `<article class="kpi"><p class="kpi-label">${it.label}</p><p class="kpi-value">${it.f.format(v)}</p>${delta}</article>`;
+    }).join("");
+  }
+
+  /* ---------- Gráficos del sitio ---------- */
+
+  function renderDaily() {
+    const p = portalOf(S.portal);
+    const ed = bucketCounts(S.rows, S.b, isEd);
+    const sp = bucketCounts(S.rows, S.b, r => r.st === "p" && r.sp);
+    $("dailyNote").textContent = `Editorial y patrocinado · ${buckets(S.b).mode === "day" ? "por día" : "por mes"}`;
+    drawChart("daily", "chartDaily", {
+      type: "bar",
+      data: {
+        labels: ed.labels,
+        datasets: [
+          { label: "Editorial", data: ed.data, backgroundColor: p.color, borderRadius: 4, stack: "s" },
+          { label: "Patrocinado", data: sp.data, backgroundColor: SPONSOR, borderRadius: 4, stack: "s" },
+        ],
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: "bottom", labels: { boxWidth: 10, usePointStyle: true } } },
+        scales: { x: { stacked: true, grid: { display: false } }, y: { stacked: true, beginAtZero: true } },
+      },
+    });
+  }
+
+  function renderSections() {
+    const p = portalOf(S.portal);
+    const counts = {};
+    for (const r of S.rows.filter(isEd)) counts[r.s] = (counts[r.s] || 0) + 1;
+    const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    drawChart("sections", "chartSections", {
+      type: "bar",
+      data: { labels: entries.map(e => e[0]), datasets: [{ data: entries.map(e => e[1]), backgroundColor: p.color, borderRadius: 4 }] },
+      options: {
+        indexAxis: "y", responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { x: { beginAtZero: true }, y: { grid: { display: false } } },
+      },
+    });
+  }
+
+  /* ---------- Mapa de calor por hora ---------- */
+  const HEAT_STOPS = [[0, [255, 249, 196]], [0.5, [253, 174, 97]], [1, [215, 25, 28]]];
+  function heatColor(t) {
+    for (let i = 1; i < HEAT_STOPS.length; i++) {
+      const [t0, c0] = HEAT_STOPS[i - 1], [t1, c1] = HEAT_STOPS[i];
+      if (t <= t1) {
+        const k = (t - t0) / (t1 - t0);
+        return `rgb(${c0.map((v, j) => Math.round(v + (c1[j] - v) * k)).join(",")})`;
+      }
+    }
+    return "rgb(215,25,28)";
+  }
+
+
+  function renderHeatmap() {
+    const grid = Array.from({ length: 7 }, () => new Array(24).fill(0));
+    for (const r of S.rows) if (isEd(r)) grid[dowOf(r.d.slice(0, 10))][hourOf(r)]++;
+    const max = Math.max(1, ...grid.flat());
+
+    let html = `<thead><tr><th></th>` +
+      Array.from({ length: 24 }, (_, h) => `<th class="hcol" scope="col">${pad2(h)}</th>`).join("") +
+      `<th class="num" scope="col">Total</th></tr></thead><tbody>`;
+    grid.forEach((row, d) => {
+      html += `<tr><th scope="row" class="hday">${DAYS_S[d]}</th>`;
+      row.forEach((v, h) => {
+        const t = v / max;
+        const txt = t > 0.6 ? "#fff" : "var(--text)";
+        html += `<td class="hm" style="background:${heatColor(t)};color:${txt}" ` +
+          `title="${DAYS[d]} ${pad2(h)}:00 · ${v} publicadas">${v || ""}</td>`;
+      });
+      html += `<td class="num">${nf.format(row.reduce((x, y) => x + y, 0))}</td></tr>`;
+    });
+    $("heatTable").innerHTML = html + `</tbody>`;
+  }
+
+  /* ---------- Temas en títulos ---------- */
+
+  function renderTopics() {
+    const map = new Map();
+    for (const r of S.rows.filter(isEd)) {
+      const seen = new Set();
+      for (const tok of r.t.toLowerCase().match(/[\p{L}\p{N}]+/gu) || []) {
+        if (tok.length < 4 || /^\d+$/.test(tok)) continue;
+        const k = norm(tok);
+        if (STOP.has(k) || SITE_WORDS.has(k) || seen.has(k)) continue;
+        seen.add(k);
+        const cur = map.get(k);
+        if (cur) cur.count++;
+        else map.set(k, { count: 1, word: tok });
+      }
+    }
+    const top = [...map.values()].sort((a, b) => b.count - a.count).slice(0, 40);
+    const p = portalOf(S.portal);
+    if (!top.length) {
+      $("cloud").innerHTML = `<p class="empty">Sin títulos suficientes en este periodo</p>`;
+      return;
+    }
+    const maxC = top[0].count, minC = top[top.length - 1].count;
+    $("cloud").innerHTML = top.map(t => {
+      const size = 13 + (t.count - minC) / (maxC - minC || 1) * 17;
+      return `<button type="button" class="topic" data-w="${esc(t.word)}" style="font-size:${size.toFixed(1)}px;color:${p.color}" ` +
+        `title="${nf.format(t.count)} títulos">${esc(t.word)}</button>`;
+    }).join("");
+    $("topicsNote").textContent = `Palabras más frecuentes en ${nf.format(S.rows.filter(isEd).length)} títulos publicados. Haz clic en una palabra para filtrar artículos.`;
+  }
+
+  /* ---------- Filtros y periodistas ---------- */
+
+  function renderFilters() {
+    const secs = [...new Set(S.rows.map(r => r.s))].sort((a, b) => a.localeCompare(b, "es"));
+    if (!secs.includes(S.sec)) S.sec = "";
+    $("sectionFilter").innerHTML = `<option value="">Todas las secciones</option>` +
+      secs.map(s => `<option value="${esc(s)}">${esc(s)}</option>`).join("");
+    $("sectionFilter").value = S.sec;
+
+    const fmts = [...new Set(S.rows.map(r => r.f).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+    if (!fmts.includes(S.fmt)) S.fmt = "";
+    $("fmtFilter").hidden = fmts.length === 0;
+    $("fmtFilter").innerHTML = `<option value="">Todos los formatos</option>` +
+      fmts.map(f => `<option value="${esc(f)}">${esc(f)}</option>`).join("");
+    $("fmtFilter").value = S.fmt;
+  }
+
+  function authorRows() {
+    const ed = S.rows.filter(isEd), total = ed.length, map = new Map();
+    for (const r of ed) {
+      if (!map.has(r.a)) map.set(r.a, { author: r.a, published: 0, days: new Set(), sec: {} });
+      const o = map.get(r.a);
+      o.published++;
+      o.days.add(r.d.slice(0, 10));
+      o.sec[r.s] = (o.sec[r.s] || 0) + 1;
+    }
+    return [...map.values()].map(o => {
+      const top = Object.entries(o.sec).sort((a, b) => b[1] - a[1])[0];
+      return {
+        author: o.author, published: o.published, activeDays: o.days.size,
+        share: total ? o.published / total * 100 : 0,
+        topSection: top ? top[0] : "—",
+      };
+    });
+  }
+
+  function renderAuthors() {
+    let rows = authorRows();
+    const q = norm(S.aq);
+    if (q) rows = rows.filter(r => norm(r.author).includes(q));
+    const { k, dir } = S.sort;
+    rows.sort((a, b) => {
+      const va = a[k], vb = b[k];
+      return (typeof va === "string" ? va.localeCompare(vb, "es") : va - vb) * dir;
+    });
+    $("authorsBody").innerHTML = rows.length ? rows.map((r, i) => `
+      <tr>
+        <td class="num">${i + 1}</td>
+        <td>${esc(r.author)}${INSTITUTIONAL.has(r.author) ? '<span class="tag">institucional</span>' : ""}</td>
+        <td class="num">${nf.format(r.published)}</td>
+        <td class="num">${nf.format(r.activeDays)}</td>
+        <td class="num">${nf1.format(r.share)} %</td>
+        <td>${esc(r.topSection)}</td>
+      </tr>`).join("") : `<tr><td colspan="6" class="empty">Sin periodistas con esos criterios</td></tr>`;
+    $("authorsCount").textContent = `${nf.format(rows.length)} periodistas`;
+    document.querySelectorAll("th[data-k]").forEach(th => th.setAttribute("aria-sort",
+      th.dataset.k === k ? (dir === 1 ? "ascending" : "descending") : "none"));
+  }
+
+  function sortAuthors(k) {
+    if (S.sort.k === k) S.sort.dir *= -1;
+    else S.sort = { k, dir: (k === "author" || k === "topSection") ? 1 : -1 };
+    renderAuthors();
+  }
+
+  /* ---------- Artículos ---------- */
+
+  function filtered() {
+    const q = norm(S.q);
+    return S.rows.filter(r =>
+      (!S.sec || r.s === S.sec) &&
+      (!S.fmt || r.f === S.fmt) &&
+      (!S.kind || kind(r) === S.kind) &&
+      (!q || norm(r.t).includes(q) || norm(r.a).includes(q)));
+  }
+
+  function renderArticles() {
+    const rows = filtered();
+    const pages = Math.max(1, Math.ceil(rows.length / PAGE));
+    S.page = Math.min(S.page, pages);
+    const slice = rows.slice((S.page - 1) * PAGE, S.page * PAGE);
+    $("articlesBody").innerHTML = slice.length ? slice.map(r => {
+      const k = kind(r);
+      return `<tr>
+        <td class="nowrap">${fmtYmd(r.d)}</td>
+        <td class="hour">${r.d.slice(11, 16)}</td>
+        <td><span class="chip">${esc(r.s)}</span>${r.f ? ` <span class="muted fmt">${esc(r.f)}</span>` : ""}</td>
+        <td class="title"><a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.t)}</a></td>
+        <td>${esc(r.a)}</td>
+        <td><span class="status s-${k}">${STL[k]}</span></td>
+      </tr>`;
+    }).join("") : `<tr><td colspan="6" class="empty">Sin artículos con esos filtros</td></tr>`;
+    $("articlesCount").textContent = `${nf.format(rows.length)} artículos`;
+    $("pageInfo").textContent = `Página ${S.page} de ${pages}`;
+    $("prevPage").disabled = S.page <= 1;
+    $("nextPage").disabled = S.page >= pages;
+  }
+
+  /* ---------- Flujo ---------- */
+
+  function renderAll() {
+    S.b = bounds();
+    S.rows = portalRows(S.portal, S.b);
+    renderHeader();
+    renderComparison();
+    renderKPIs();
+    renderDaily();
+    renderSections();
+    renderHeatmap();
+    renderTopics();
+    renderFilters();
+    renderAuthors();
+    renderArticles();
+  }
+
+  function setPortal(pid) {
+    S.portal = pid;
+    S.sec = ""; S.fmt = ""; S.page = 1;
+    renderAll();
+  }
+
+  function debounce(fn, ms = 150) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+
+  function init() {
+    $("genAt").textContent = DATA.generated;
+    $("monthSel").innerHTML = MONTHS.slice().reverse().map(m => `<option value="${m}">${monthLong(m)}</option>`).join("");
+    $("yearSel").innerHTML = YEARS.slice().reverse().map(y => `<option value="${y}">${y}</option>`).join("");
+    for (const id of ["fromDate", "toDate"]) { $(id).min = MIN_DATE; $(id).max = MAX_DATE; }
+
+    $("tabs").addEventListener("click", e => {
+      const b = e.target.closest("button[data-p]");
+      if (b) setPortal(b.dataset.p);
+    });
+    $("compBody").addEventListener("click", e => {
+      const tr = e.target.closest("tr[data-p]");
+      if (tr) setPortal(tr.dataset.p);
+    });
+
+    $("periodMode").addEventListener("change", e => {
+      const current = bounds();
+      S.mode = e.target.value;
+      if (S.mode === "range") { S.from = current.from; S.to = current.to; }
+      $("presetSel").value = "";
+      S.page = 1;
+      renderAll();
+    });
+    $("monthSel").addEventListener("change", e => { S.month = e.target.value; S.page = 1; renderAll(); });
+    $("yearSel").addEventListener("change", e => { S.year = e.target.value; S.page = 1; renderAll(); });
+
+    const onDates = () => {
+      let from = $("fromDate").value, to = $("toDate").value;
+      if (!from || !to) return;
+      if (from > to) [from, to] = [to, from];
+      S.from = from; S.to = to;
+      $("presetSel").value = "";
+      S.page = 1;
+      renderAll();
+    };
+    $("fromDate").addEventListener("change", onDates);
+    $("toDate").addEventListener("change", onDates);
+
+    $("presetSel").addEventListener("change", e => {
+      const v = e.target.value;
+      if (!v) return;
+      if (v === "all") { S.from = MIN_DATE; S.to = MAX_DATE; }
+      else { S.to = MAX_DATE; S.from = addDays(MAX_DATE, -(Number(v) - 1)); }
+      S.mode = "range";
+      S.page = 1;
+      renderAll();
+      $("presetSel").value = v;
+    });
+
+
+    $("cloud").addEventListener("click", e => {
+      const b = e.target.closest("button[data-w]");
+      if (!b) return;
+      S.q = b.dataset.w;
+      S.page = 1;
+      $("articleSearch").value = S.q;
+      renderArticles();
+      $("articlesCard").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    $("authorSearch").addEventListener("input", debounce(e => { S.aq = e.target.value; renderAuthors(); }));
+    $("articleSearch").addEventListener("input", debounce(e => { S.q = e.target.value; S.page = 1; renderArticles(); }));
+    $("sectionFilter").addEventListener("change", e => { S.sec = e.target.value; S.page = 1; renderArticles(); });
+    $("fmtFilter").addEventListener("change", e => { S.fmt = e.target.value; S.page = 1; renderArticles(); });
+    $("statusFilter").addEventListener("change", e => { S.kind = e.target.value; S.page = 1; renderArticles(); });
+    $("prevPage").addEventListener("click", () => { S.page--; renderArticles(); });
+    $("nextPage").addEventListener("click", () => { S.page++; renderArticles(); });
+    document.querySelectorAll("th[data-k]").forEach(th => {
+      th.addEventListener("click", () => sortAuthors(th.dataset.k));
+      th.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); sortAuthors(th.dataset.k); }
+      });
+    });
+
+    renderAll();
+  }
+
+  init();
+})().catch(showError);
+</script>
+</body>
+</html>

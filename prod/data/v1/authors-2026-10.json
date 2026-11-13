@@ -1,0 +1,353 @@
+[
+  {
+    "portal": "meganoticias",
+    "author": "Francisca Mieres",
+    "published": 253,
+    "active_days": 18,
+    "share_pct": 12.4,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Arnaldo Sepulveda",
+    "published": 187,
+    "active_days": 18,
+    "share_pct": 9.1,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Paula Moreno",
+    "published": 180,
+    "active_days": 18,
+    "share_pct": 8.8,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Nicolas Diaz",
+    "published": 167,
+    "active_days": 19,
+    "share_pct": 8.2,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Diego Alonzo",
+    "published": 163,
+    "active_days": 17,
+    "share_pct": 8.0,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Vicente Guzman",
+    "published": 157,
+    "active_days": 17,
+    "share_pct": 7.7,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Javiera Rodríguez",
+    "published": 145,
+    "active_days": 17,
+    "share_pct": 7.1,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Ariel Araya",
+    "published": 134,
+    "active_days": 16,
+    "share_pct": 6.5,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Meganoticias",
+    "published": 125,
+    "active_days": 28,
+    "share_pct": 6.1,
+    "top_section": "Dato útil",
+    "institutional": true
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Felipe Gallardo",
+    "published": 124,
+    "active_days": 17,
+    "share_pct": 6.1,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Paz Morales",
+    "published": 116,
+    "active_days": 16,
+    "share_pct": 5.7,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Cristian Latorre",
+    "published": 114,
+    "active_days": 12,
+    "share_pct": 5.6,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Cristian Reyes",
+    "published": 89,
+    "active_days": 15,
+    "share_pct": 4.3,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Alejandro Chamorro González",
+    "published": 41,
+    "active_days": 16,
+    "share_pct": 2.0,
+    "top_section": "Tendencias",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Juan Fernández",
+    "published": 24,
+    "active_days": 16,
+    "share_pct": 1.2,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Cristobal Fuentes",
+    "published": 14,
+    "active_days": 2,
+    "share_pct": 0.7,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Claudio Arce",
+    "published": 11,
+    "active_days": 8,
+    "share_pct": 0.5,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Paul Follert",
+    "published": 1,
+    "active_days": 1,
+    "share_pct": 0.0,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "meganoticias",
+    "author": "Emilio Senn",
+    "published": 1,
+    "active_days": 1,
+    "share_pct": 0.0,
+    "top_section": "Nacional",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Sebastian Paillafil",
+    "published": 232,
+    "active_days": 26,
+    "share_pct": 22.9,
+    "top_section": "Mucho Gusto",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Marcela Paillape",
+    "published": 208,
+    "active_days": 29,
+    "share_pct": 20.5,
+    "top_section": "La Baronesa",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Sebastian Mena",
+    "published": 159,
+    "active_days": 30,
+    "share_pct": 15.7,
+    "top_section": "Prohibida Obsesión",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Fernanda Vielma",
+    "published": 125,
+    "active_days": 24,
+    "share_pct": 12.3,
+    "top_section": "Volverías con tu Ex",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Matias Rivera",
+    "published": 109,
+    "active_days": 13,
+    "share_pct": 10.7,
+    "top_section": "Entretenimiento",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Morella Rivas",
+    "published": 88,
+    "active_days": 31,
+    "share_pct": 8.7,
+    "top_section": "Entretenimiento",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Agustin Brun",
+    "published": 45,
+    "active_days": 18,
+    "share_pct": 4.4,
+    "top_section": "Entretenimiento",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Roselin Acosta",
+    "published": 37,
+    "active_days": 9,
+    "share_pct": 3.6,
+    "top_section": "Entretenimiento",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Valentina Blanc",
+    "published": 4,
+    "active_days": 2,
+    "share_pct": 0.4,
+    "top_section": "Entretenimiento",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Cristian Reyes",
+    "published": 3,
+    "active_days": 2,
+    "share_pct": 0.3,
+    "top_section": "La Roja",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Carolina Brown",
+    "published": 1,
+    "active_days": 1,
+    "share_pct": 0.1,
+    "top_section": "Volverías con tu Ex",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Nicolas Diaz",
+    "published": 1,
+    "active_days": 1,
+    "share_pct": 0.1,
+    "top_section": "Actualidad",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Felipe Gallardo",
+    "published": 1,
+    "active_days": 1,
+    "share_pct": 0.1,
+    "top_section": "La Roja",
+    "institutional": false
+  },
+  {
+    "portal": "mega",
+    "author": "Juan Fernández",
+    "published": 1,
+    "active_days": 1,
+    "share_pct": 0.1,
+    "top_section": "La Roja",
+    "institutional": false
+  },
+  {
+    "portal": "megatiempo",
+    "author": "Juan Pavon",
+    "published": 180,
+    "active_days": 30,
+    "share_pct": 37.0,
+    "top_section": "Pronóstico",
+    "institutional": false
+  },
+  {
+    "portal": "megatiempo",
+    "author": "Cesar Bracho",
+    "published": 122,
+    "active_days": 27,
+    "share_pct": 25.1,
+    "top_section": "Pronóstico",
+    "institutional": false
+  },
+  {
+    "portal": "megatiempo",
+    "author": "Daniel Rondon",
+    "published": 68,
+    "active_days": 23,
+    "share_pct": 14.0,
+    "top_section": "Pronóstico",
+    "institutional": false
+  },
+  {
+    "portal": "megatiempo",
+    "author": "Reina Carreno",
+    "published": 61,
+    "active_days": 27,
+    "share_pct": 12.6,
+    "top_section": "Noticias",
+    "institutional": false
+  },
+  {
+    "portal": "megatiempo",
+    "author": "Roselin Acosta",
+    "published": 54,
+    "active_days": 25,
+    "share_pct": 11.1,
+    "top_section": "Pronóstico",
+    "institutional": false
+  },
+  {
+    "portal": "megatiempo",
+    "author": "Meganoticias",
+    "published": 1,
+    "active_days": 1,
+    "share_pct": 0.2,
+    "top_section": "Pronóstico",
+    "institutional": true
+  }
+]

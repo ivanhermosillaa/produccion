@@ -1,0 +1,602 @@
+[
+  {
+    "portal": "meganoticias",
+    "word": "santiago",
+    "titles": 133
+  },
+  {
+    "portal": "meganoticias",
+    "word": "chile",
+    "titles": 130
+  },
+  {
+    "portal": "meganoticias",
+    "word": "años",
+    "titles": 105
+  },
+  {
+    "portal": "meganoticias",
+    "word": "revisa",
+    "titles": 105
+  },
+  {
+    "portal": "meganoticias",
+    "word": "magnitud",
+    "titles": 103
+  },
+  {
+    "portal": "meganoticias",
+    "word": "temblor",
+    "titles": 96
+  },
+  {
+    "portal": "meganoticias",
+    "word": "norte",
+    "titles": 91
+  },
+  {
+    "portal": "meganoticias",
+    "word": "zona",
+    "titles": 87
+  },
+  {
+    "portal": "meganoticias",
+    "word": "condes",
+    "titles": 81
+  },
+  {
+    "portal": "meganoticias",
+    "word": "aluvión",
+    "titles": 81
+  },
+  {
+    "portal": "meganoticias",
+    "word": "lluvias",
+    "titles": 78
+  },
+  {
+    "portal": "meganoticias",
+    "word": "país",
+    "titles": 77
+  },
+  {
+    "portal": "meganoticias",
+    "word": "sismo",
+    "titles": 64
+  },
+  {
+    "portal": "meganoticias",
+    "word": "comunas",
+    "titles": 61
+  },
+  {
+    "portal": "meganoticias",
+    "word": "registra",
+    "titles": 59
+  },
+  {
+    "portal": "meganoticias",
+    "word": "octubre",
+    "titles": 59
+  },
+  {
+    "portal": "meganoticias",
+    "word": "millones",
+    "titles": 59
+  },
+  {
+    "portal": "meganoticias",
+    "word": "tormentas",
+    "titles": 55
+  },
+  {
+    "portal": "meganoticias",
+    "word": "nuevo",
+    "titles": 54
+  },
+  {
+    "portal": "meganoticias",
+    "word": "conoce",
+    "titles": 53
+  },
+  {
+    "portal": "meganoticias",
+    "word": "eléctricas",
+    "titles": 53
+  },
+  {
+    "portal": "meganoticias",
+    "word": "epicentro",
+    "titles": 51
+  },
+  {
+    "portal": "meganoticias",
+    "word": "alerta",
+    "titles": 50
+  },
+  {
+    "portal": "meganoticias",
+    "word": "sistema",
+    "titles": 48
+  },
+  {
+    "portal": "meganoticias",
+    "word": "región",
+    "titles": 48
+  },
+  {
+    "portal": "meganoticias",
+    "word": "tres",
+    "titles": 48
+  },
+  {
+    "portal": "meganoticias",
+    "word": "horas",
+    "titles": 47
+  },
+  {
+    "portal": "meganoticias",
+    "word": "centro",
+    "titles": 47
+  },
+  {
+    "portal": "meganoticias",
+    "word": "gobierno",
+    "titles": 46
+  },
+  {
+    "portal": "meganoticias",
+    "word": "regiones",
+    "titles": 46
+  },
+  {
+    "portal": "meganoticias",
+    "word": "nueva",
+    "titles": 45
+  },
+  {
+    "portal": "meganoticias",
+    "word": "días",
+    "titles": 43
+  },
+  {
+    "portal": "meganoticias",
+    "word": "puedes",
+    "titles": 42
+  },
+  {
+    "portal": "meganoticias",
+    "word": "kast",
+    "titles": 41
+  },
+  {
+    "portal": "meganoticias",
+    "word": "anuncia",
+    "titles": 40
+  },
+  {
+    "portal": "meganoticias",
+    "word": "frontal",
+    "titles": 40
+  },
+  {
+    "portal": "meganoticias",
+    "word": "muere",
+    "titles": 39
+  },
+  {
+    "portal": "meganoticias",
+    "word": "bono",
+    "titles": 37
+  },
+  {
+    "portal": "meganoticias",
+    "word": "carabineros",
+    "titles": 36
+  },
+  {
+    "portal": "meganoticias",
+    "word": "hijo",
+    "titles": 36
+  },
+  {
+    "portal": "mega",
+    "word": "capítulo",
+    "titles": 248
+  },
+  {
+    "portal": "mega",
+    "word": "baronesa",
+    "titles": 137
+  },
+  {
+    "portal": "mega",
+    "word": "prohibida",
+    "titles": 58
+  },
+  {
+    "portal": "mega",
+    "word": "obsesión",
+    "titles": 58
+  },
+  {
+    "portal": "mega",
+    "word": "faloon",
+    "titles": 52
+  },
+  {
+    "portal": "mega",
+    "word": "larraguibel",
+    "titles": 45
+  },
+  {
+    "portal": "mega",
+    "word": "dale",
+    "titles": 43
+  },
+  {
+    "portal": "mega",
+    "word": "volverías",
+    "titles": 40
+  },
+  {
+    "portal": "mega",
+    "word": "clara",
+    "titles": 39
+  },
+  {
+    "portal": "mega",
+    "word": "reunión",
+    "titles": 39
+  },
+  {
+    "portal": "mega",
+    "word": "superados",
+    "titles": 39
+  },
+  {
+    "portal": "mega",
+    "word": "play",
+    "titles": 38
+  },
+  {
+    "portal": "mega",
+    "word": "octubre",
+    "titles": 37
+  },
+  {
+    "portal": "mega",
+    "word": "chile",
+    "titles": 37
+  },
+  {
+    "portal": "mega",
+    "word": "lluvias",
+    "titles": 36
+  },
+  {
+    "portal": "mega",
+    "word": "bárbara",
+    "titles": 34
+  },
+  {
+    "portal": "mega",
+    "word": "daniel",
+    "titles": 34
+  },
+  {
+    "portal": "mega",
+    "word": "coliseo",
+    "titles": 33
+  },
+  {
+    "portal": "mega",
+    "word": "roja",
+    "titles": 31
+  },
+  {
+    "portal": "mega",
+    "word": "santiago",
+    "titles": 31
+  },
+  {
+    "portal": "mega",
+    "word": "programación",
+    "titles": 30
+  },
+  {
+    "portal": "mega",
+    "word": "fuerte",
+    "titles": 27
+  },
+  {
+    "portal": "mega",
+    "word": "cerda",
+    "titles": 27
+  },
+  {
+    "portal": "mega",
+    "word": "antonio",
+    "titles": 27
+  },
+  {
+    "portal": "mega",
+    "word": "luciano",
+    "titles": 26
+  },
+  {
+    "portal": "mega",
+    "word": "león",
+    "titles": 26
+  },
+  {
+    "portal": "mega",
+    "word": "años",
+    "titles": 26
+  },
+  {
+    "portal": "mega",
+    "word": "lópez",
+    "titles": 25
+  },
+  {
+    "portal": "mega",
+    "word": "hora",
+    "titles": 24
+  },
+  {
+    "portal": "mega",
+    "word": "nueva",
+    "titles": 24
+  },
+  {
+    "portal": "mega",
+    "word": "javier",
+    "titles": 24
+  },
+  {
+    "portal": "mega",
+    "word": "samuel",
+    "titles": 24
+  },
+  {
+    "portal": "mega",
+    "word": "conoce",
+    "titles": 23
+  },
+  {
+    "portal": "mega",
+    "word": "claro",
+    "titles": 23
+  },
+  {
+    "portal": "mega",
+    "word": "emilia",
+    "titles": 23
+  },
+  {
+    "portal": "mega",
+    "word": "carmen",
+    "titles": 22
+  },
+  {
+    "portal": "mega",
+    "word": "gloria",
+    "titles": 22
+  },
+  {
+    "portal": "mega",
+    "word": "casa",
+    "titles": 22
+  },
+  {
+    "portal": "mega",
+    "word": "nuevo",
+    "titles": 21
+  },
+  {
+    "portal": "mega",
+    "word": "luis",
+    "titles": 20
+  },
+  {
+    "portal": "megatiempo",
+    "word": "precipitaciones",
+    "titles": 142
+  },
+  {
+    "portal": "megatiempo",
+    "word": "tormentas",
+    "titles": 121
+  },
+  {
+    "portal": "megatiempo",
+    "word": "lluvias",
+    "titles": 112
+  },
+  {
+    "portal": "megatiempo",
+    "word": "pronóstico",
+    "titles": 97
+  },
+  {
+    "portal": "megatiempo",
+    "word": "eléctricas",
+    "titles": 88
+  },
+  {
+    "portal": "megatiempo",
+    "word": "santiago",
+    "titles": 86
+  },
+  {
+    "portal": "megatiempo",
+    "word": "regiones",
+    "titles": 63
+  },
+  {
+    "portal": "megatiempo",
+    "word": "sistema",
+    "titles": 63
+  },
+  {
+    "portal": "megatiempo",
+    "word": "valparaíso",
+    "titles": 62
+  },
+  {
+    "portal": "megatiempo",
+    "word": "lluvia",
+    "titles": 58
+  },
+  {
+    "portal": "megatiempo",
+    "word": "frontal",
+    "titles": 58
+  },
+  {
+    "portal": "megatiempo",
+    "word": "región",
+    "titles": 52
+  },
+  {
+    "portal": "megatiempo",
+    "word": "semana",
+    "titles": 50
+  },
+  {
+    "portal": "megatiempo",
+    "word": "coquimbo",
+    "titles": 49
+  },
+  {
+    "portal": "megatiempo",
+    "word": "días",
+    "titles": 40
+  },
+  {
+    "portal": "megatiempo",
+    "word": "oficial",
+    "titles": 39
+  },
+  {
+    "portal": "megatiempo",
+    "word": "sectores",
+    "titles": 36
+  },
+  {
+    "portal": "megatiempo",
+    "word": "aviso",
+    "titles": 35
+  },
+  {
+    "portal": "megatiempo",
+    "word": "comunas",
+    "titles": 33
+  },
+  {
+    "portal": "megatiempo",
+    "word": "zona",
+    "titles": 32
+  },
+  {
+    "portal": "megatiempo",
+    "word": "sábado",
+    "titles": 32
+  },
+  {
+    "portal": "megatiempo",
+    "word": "viernes",
+    "titles": 31
+  },
+  {
+    "portal": "megatiempo",
+    "word": "nuevo",
+    "titles": 31
+  },
+  {
+    "portal": "megatiempo",
+    "word": "octubre",
+    "titles": 30
+  },
+  {
+    "portal": "megatiempo",
+    "word": "sepúlveda",
+    "titles": 29
+  },
+  {
+    "portal": "megatiempo",
+    "word": "vientos",
+    "titles": 28
+  },
+  {
+    "portal": "megatiempo",
+    "word": "jueves",
+    "titles": 28
+  },
+  {
+    "portal": "megatiempo",
+    "word": "meteoróloga",
+    "titles": 27
+  },
+  {
+    "portal": "megatiempo",
+    "word": "martes",
+    "titles": 27
+  },
+  {
+    "portal": "megatiempo",
+    "word": "tiempo",
+    "titles": 27
+  },
+  {
+    "portal": "megatiempo",
+    "word": "norte",
+    "titles": 27
+  },
+  {
+    "portal": "megatiempo",
+    "word": "miércoles",
+    "titles": 27
+  },
+  {
+    "portal": "megatiempo",
+    "word": "lunes",
+    "titles": 27
+  },
+  {
+    "portal": "megatiempo",
+    "word": "metropolitana",
+    "titles": 26
+  },
+  {
+    "portal": "megatiempo",
+    "word": "alejandro",
+    "titles": 26
+  },
+  {
+    "portal": "megatiempo",
+    "word": "central",
+    "titles": 25
+  },
+  {
+    "portal": "megatiempo",
+    "word": "actualiza",
+    "titles": 24
+  },
+  {
+    "portal": "megatiempo",
+    "word": "leyton",
+    "titles": 24
+  },
+  {
+    "portal": "megatiempo",
+    "word": "probabilidad",
+    "titles": 24
+  },
+  {
+    "portal": "megatiempo",
+    "word": "chile",
+    "titles": 23
+  }
+]
