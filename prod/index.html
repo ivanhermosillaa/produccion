@@ -91,6 +91,16 @@ tbody tr:not(.selected):hover{background:#F8FAFC}
 .hday{text-align:left;padding-right:10px!important;font-size:12px;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:500}
 .hm{width:34px;height:30px;text-align:center;border-radius:5px;font-size:11px;font-variant-numeric:tabular-nums}
 .heat .num{padding-left:10px;font-size:12px}
+/* Calidad de datos */
+.q-summary{display:flex;gap:8px;flex-wrap:wrap}
+.q-chip,.q-badge{font-size:12px;padding:3px 10px;border-radius:999px;white-space:nowrap;font-weight:500}
+.q-ok{background:#E3F5EF;color:#137A60}
+.q-warn{background:#FFF3D6;color:#7A5300}
+.q-crit{background:#FDECEA;color:#8A1F1A}
+.q-info{background:#EEF1F6;color:#4B5366}
+.q-list{margin:8px 0 0;padding-left:18px;font-size:13px}
+.q-list li{margin:4px 0}
+details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:6px}
 /* Leyenda mapa de calor */
 .legend{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-top:14px}
 .ramp{width:180px;height:10px;border-radius:5px;background:linear-gradient(90deg,#FFF9C4,#FDAE61,#D7191C)}
@@ -143,6 +153,22 @@ tbody tr:not(.selected):hover{background:#F8FAFC}
 <main class="wrap">
 
   <p class="ctx" id="ctx"></p>
+
+  <section class="card" id="qualityCard">
+    <header class="card-h row">
+      <div>
+        <h2>Calidad de datos</h2>
+        <p>Controles sobre el sitio y periodo seleccionados. Usa "Ver casos" para revisar los registros.</p>
+      </div>
+      <div class="q-summary" id="qualitySummary"></div>
+    </header>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Control</th><th class="num">Resultado</th><th>Estado</th><th>Qué significa</th></tr></thead>
+        <tbody id="qualityBody"></tbody>
+      </table>
+    </div>
+  </section>
 
   <section class="card">
     <header class="card-h">
@@ -268,21 +294,13 @@ tbody tr:not(.selected):hover{background:#F8FAFC}
 </footer>
 
 <script>
-const DATA_BASE = "data/v1/";
-
-async function getJSON(name) {
-  const res = await fetch(DATA_BASE + name, { cache: "no-cache" });
-  if (!res.ok) throw new Error(`${name}: HTTP ${res.status}`);
-  return res.json();
-}
+const DATA_URL = "data/produccion.json";
 
 async function loadData() {
-  const meta = await getJSON("meta.json");
-  const [portals, lists] = await Promise.all([
-    getJSON("portals.json"),
-    Promise.all(meta.months.map(m => getJSON(`articles-${m}.json`))),
-  ]);
-  const rows = lists.flat().map(a => ({
+  const res = await fetch(DATA_URL, { cache: "no-cache" });
+  if (!res.ok) throw new Error(`${DATA_URL}: HTTP ${res.status}`);
+  const j = await res.json();
+  const rows = j.articles.map(a => ({
     p: a.portal,
     d: a.published_at.slice(0, 16),
     s: a.section,
@@ -293,10 +311,11 @@ async function loadData() {
     sp: a.content_type === "sponsored" ? 1 : 0,
     u: a.url,
   }));
-  const g = meta.generated_at;
+  const g = j.meta.generated_at;
   return {
+    generatedIso: g,
     generated: `${g.slice(8, 10)}/${g.slice(5, 7)}/${g.slice(0, 4)} ${g.slice(11, 16)}`,
-    portals: portals.map(p => ({ id: p.id, name: p.name, color: p.color })),
+    portals: j.portals.map(p => ({ id: p.id, name: p.name, color: p.color })),
     rows,
   };
 }
@@ -306,7 +325,10 @@ function showError(err) {
   const box = document.createElement("div");
   box.setAttribute("role", "alert");
   box.style.cssText = "margin:24px auto;max-width:720px;padding:16px 20px;border-radius:10px;background:#FDECEA;color:#8A1F1A;border:1px solid #F5C6C2;font-family:system-ui,sans-serif";
-  box.textContent = "No se pudieron cargar los datos. Revisa que la carpeta data/v1 exista y que la página se abra desde un servidor (no con doble clic). Detalle: " + err.message;
+  const isFile = location.protocol === "file:";
+  box.textContent = isFile
+    ? "Esta página se abrió como archivo local y el navegador bloquea la lectura de data/produccion.json. Abre produccion_portales.html, que ya incluye los datos, o sirve esta carpeta con un servidor."
+    : "No se pudo cargar data/produccion.json. Verifica que el archivo esté junto a index.html en el servidor. Detalle: " + err.message;
   document.querySelector("main")?.prepend(box);
 }
 
@@ -716,12 +738,166 @@ function showError(err) {
     $("nextPage").disabled = S.page >= pages;
   }
 
+  /* ---------- Calidad de datos ---------- */
+
+  const QUALITY_TXT = { ok: "Correcto", warn: "Atención", crit: "Crítico", info: "Informativo" };
+  const urlDate = u => { const m = String(u).match(/(\d{2})-(\d{2})-(\d{4})/); return m ? `${m[3]}-${m[2]}-${m[1]}` : null; };
+  const nowLocal = () => new Date().toLocaleString("sv-SE", { timeZone: "America/Santiago" }).replace(" ", "T").slice(0, 16);
+  const caseOf = r => ({ t: r.t, meta: `${fmtDateTime(r.d)} · ${r.s}`, u: r.u });
+
+  function qualityChecks(rows, b) {
+    const total = rows.length;
+    const out = [];
+    const add = c => out.push({ examples: [], result: `${nf.format(c.count)} de ${nf.format(c.total)}`, ...c });
+
+    // 1. Títulos repetidos en URLs distintas
+    const groups = new Map();
+    for (const r of rows) {
+      const k = norm(r.t).trim();
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(r);
+    }
+    const dup = [...groups.values()].filter(g => g.length > 1 && new Set(g.map(x => x.u)).size > 1);
+    const dupCount = dup.reduce((a, g) => a + g.length, 0);
+    add({
+      label: "Títulos repetidos en URLs distintas", count: dupCount, total,
+      status: dupCount === 0 ? "ok" : dupCount / total > 0.02 ? "crit" : "warn",
+      desc: "Pueden ser duplicados de carga o titulares recurrentes. Conviene revisarlos antes de contarlos como producción nueva.",
+      examples: dup.slice(0, 25).map(g => ({
+        t: g[0].t,
+        meta: `${g.length} registros · ${[...new Set(g.map(x => fmtYmd(x.d)))].join(", ")}`,
+        u: g[0].u,
+      })),
+    });
+
+    // 2. Fecha en la URL distinta a la fecha de publicación
+    const dated = rows.filter(r => urlDate(r.u));
+    const mism = dated.filter(r => urlDate(r.u) !== r.d.slice(0, 10));
+    add({
+      label: "Fecha en la URL distinta a la de publicación", count: mism.length, total: dated.length,
+      status: mism.length === 0 ? "ok" : "warn",
+      desc: "Algunos formatos (por ejemplo, Dato útil) llevan la fecha del día anterior. Hay que definir cuál fecha es la canónica.",
+      examples: mism.slice(0, 25).map(r => ({
+        t: r.t, meta: `Publicada ${fmtDateTime(r.d)} · URL ${fmtYmd(urlDate(r.u))}`, u: r.u,
+      })),
+    });
+
+    // 3. Artículos sin periodista
+    const noAuthor = rows.filter(r => !r.a || r.a === "—");
+    add({
+      label: "Artículos sin periodista", count: noAuthor.length, total,
+      status: noAuthor.length ? "crit" : "ok",
+      desc: "Sin firma no se puede atribuir la producción. Hay que revisar el campo en el CMS.",
+      examples: noAuthor.slice(0, 25).map(caseOf),
+    });
+
+    // 4. Firmas institucionales
+    const inst = rows.filter(r => INSTITUTIONAL.has(r.a));
+    add({
+      label: "Firmas institucionales", count: inst.length, total,
+      status: inst.length ? "info" : "ok",
+      desc: "Notas firmadas con el nombre del portal. Aparecen marcadas en la tabla de periodistas.",
+      examples: inst.slice(0, 25).map(caseOf),
+    });
+
+    // 5. Patrocinados publicados
+    const spPub = rows.filter(r => r.st === "p" && r.sp);
+    add({
+      label: "Patrocinados publicados", count: spPub.length, total,
+      status: spPub.length ? "info" : "ok",
+      desc: "Quedan fuera de las métricas editoriales y tienen su propia tarjeta.",
+    });
+
+    // 6. Caracteres de escape en títulos
+    const escaped = rows.filter(r => /\\/.test(r.t));
+    add({
+      label: "Títulos con caracteres de escape", count: escaped.length, total,
+      status: escaped.length ? "crit" : "ok",
+      desc: "Barras invertidas residuales en el título, por ejemplo en comillas o apóstrofes. Deben limpiarse en la ingesta.",
+      examples: escaped.slice(0, 25).map(caseOf),
+    });
+
+    // 7. Títulos muy cortos
+    const short = rows.filter(r => r.t.trim().length < 15);
+    add({
+      label: "Títulos muy cortos (menos de 15 caracteres)", count: short.length, total,
+      status: short.length ? "warn" : "ok",
+      desc: "Pueden ser errores de carga o titulares incompletos.",
+      examples: short.slice(0, 25).map(caseOf),
+    });
+
+    // 8. Tasa de no publicadas
+    const un = rows.filter(r => r.st === "u");
+    const unRate = total ? un.length / total : 0;
+    add({
+      label: "Tasa de no publicadas", count: un.length, total,
+      result: `${nf1.format(unRate * 100)} %`,
+      status: unRate > 0.15 ? "crit" : unRate > 0.05 ? "warn" : "ok",
+      desc: "Porcentaje de piezas no publicadas sobre el total del periodo. Atención desde 5 %, crítico desde 15 %.",
+    });
+
+    // 9. Fechas posteriores a hoy
+    const now = nowLocal();
+    const future = rows.filter(r => r.d > now);
+    add({
+      label: "Fechas posteriores a hoy", count: future.length, total,
+      status: future.length ? "crit" : "ok",
+      desc: "Fechas de publicación en el futuro. Suelen indicar error de zona horaria o de carga.",
+      examples: future.slice(0, 25).map(caseOf),
+    });
+
+    // 10. Días sin publicaciones editoriales
+    const edDays = new Set(rows.filter(isEd).map(r => r.d.slice(0, 10)));
+    const missing = [];
+    for (let d = b.from; d <= b.to; d = addDays(d, 1)) if (!edDays.has(d)) missing.push(d);
+    const days = spanDays(b.from, b.to);
+    add({
+      label: "Días sin publicaciones editoriales", count: missing.length, total: days,
+      status: missing.length === 0 ? "ok" : missing.length / days > 0.1 ? "warn" : "info",
+      desc: "Días del periodo sin piezas editoriales. Puede ser normal en fines de semana o indicar un hueco de carga.",
+      examples: missing.slice(0, 25).map(d => ({ t: fmtYmd(d), meta: "Sin publicaciones editoriales", u: "" })),
+    });
+
+    // 11. Antigüedad de la última carga
+    const ageH = (Date.now() - Date.parse(DATA.generatedIso + "-03:00")) / 3.6e6;
+    add({
+      label: "Antigüedad de la última carga", count: Math.round(ageH), total: 48,
+      result: `${nf.format(Math.round(ageH))} h`,
+      status: ageH > 48 ? "warn" : "ok",
+      desc: "Horas desde la última generación de datos. Se marca atención después de 48 horas.",
+    });
+
+    return out;
+  }
+
+  function renderQuality() {
+    const checks = qualityChecks(S.rows, S.b);
+    const rank = { crit: 0, warn: 1, info: 2, ok: 3 };
+    checks.sort((a, b) => rank[a.status] - rank[b.status]);
+    const counts = { crit: 0, warn: 0, ok: 0, info: 0 };
+    for (const c of checks) counts[c.status]++;
+    $("qualitySummary").innerHTML = ["crit", "warn", "ok", "info"]
+      .map(s => `<span class="q-chip q-${s}">${counts[s]} ${QUALITY_TXT[s].toLowerCase()}</span>`).join("");
+    $("qualityBody").innerHTML = checks.map(c => {
+      const more = c.count > c.examples.length ? ` de ${nf.format(c.count)}` : "";
+      const ex = c.examples.length
+        ? `<details><summary>Ver casos (${nf.format(c.examples.length)}${more})</summary><ul class="q-list">` +
+          c.examples.map(x => `<li>${x.u ? `<a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.t)}</a>` : esc(x.t)} <span class="muted">${esc(x.meta)}</span></li>`).join("") +
+          `</ul></details>`
+        : "";
+      return `<tr><td>${esc(c.label)}</td><td class="num">${c.result}</td>` +
+        `<td><span class="q-badge q-${c.status}">${QUALITY_TXT[c.status]}</span></td>` +
+        `<td>${esc(c.desc)}${ex}</td></tr>`;
+    }).join("");
+  }
+
   /* ---------- Flujo ---------- */
 
   function renderAll() {
     S.b = bounds();
     S.rows = portalRows(S.portal, S.b);
     renderHeader();
+    renderQuality();
     renderComparison();
     renderKPIs();
     renderDaily();
